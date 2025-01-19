@@ -1,0 +1,220 @@
+body {
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    width: 90%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#hh {
+    margin-left: 50px;
+}
+
+
+header button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+}
+
+header button:hover {
+    background-color: #ddd;
+}
+
+.profile {
+    margin: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+}
+
+.progress-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.progress-bar div {
+    width: 50%;
+    height: 20px;
+    /*background-color: #4CAF50;*/
+}
+
+.achievements {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.achievements h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+    background: #000;
+
+    min-height: 50px;
+    display: flex;
+    flex-direction: column; /* Расположение элементов по вертикали */
+    align-items: flex-start; /* Выравнивание элементов по левой стороне */
+}
+
+.achievements ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%; /* Растягиваем элементы на всю ширину родительского контейнера */
+    border-radius: 5px;
+}
+
+.achievements ul li:last-child {
+    border-bottom: none; /* Убираем нижний бордер у последней ачивки */
+}
+
+
+.achievements ul li.unlocked {
+    /*background-color: #4CAF50;*/
+}
+
+.achievements ul li.locked {
+    background-color: #777;
+}
+
+
+
+.achievement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#username {
+    /*background-color: #4CAF50;*/
+    border: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+#photo-selection img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#photo-selection img.selected {
+    transform: scale(0.9);
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-content button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+}
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Зеленая кнопка */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Красная кнопка */
+    color: white;
+}
+
+
+button.edit-btn:hover {
+    background-color: #45a049; /* Тень для зеленой кнопки */
+}
+
+
+button.delete-btn:hover {
+    background-color: #e53935; /* Тень для красной кнопки */
+}

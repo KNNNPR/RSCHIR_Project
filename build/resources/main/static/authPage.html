@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+<div id="auth-container">
+    <form id="login-form" action="/login" method="post" style="display: block;">
+        <h2>Авторизация</h2>
+        <div>
+            <label for="login-username">Логин:</label>
+            <input id="login-username" type="text" name="username" required>
+        </div>
+        <div>
+            <label for="login-password">Пароль:</label>
+            <input id="login-password" type="password" name="password" required>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
+
+    <form id="register-form" style="display: none;">
+        <h2>Регистрация</h2>
+        <div>
+            <label for="register-name">Имя</label>
+            <input id="register-name" type="text" required>
+        </div>
+        <div>
+            <label for="register-email">Email:</label>
+            <input id="register-email" type="email" required>
+        </div>
+        <div>
+            <label for="register-password">Пароль:</label>
+            <input id="register-password" type="password" required>
+        </div>
+        <button type="button" onclick="registerUser()">Зарегистрироваться</button>
+    </form>
+
+    <button class="toggle-button" id="toggle-button" onclick="toggleForm(true)">Регистрация</button>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>

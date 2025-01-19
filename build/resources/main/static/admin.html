@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+<header>
+    <h1>Профиль админа</h1>
+    <button onclick="logout()">Выйти</button>
+</header>
+<div class="container">
+    <div class="achievements">
+        <h2>Список Ачивок</h2>
+        <ul id="achievement-list">
+        </ul>
+        <button id="addAchievementBtn" class="btn">Добавить Ачивку</button>
+    </div>
+
+    <div class="users">
+        <h2>Список Пользователей</h2>
+        <ul id="user-list">
+        </ul>
+    </div>
+</div>
+
+<div id="achievement-modal" class="modal">
+    <div class="modal-content">
+        <h3 id = 'h3'>Добавить/Редактировать Ачивку</h3>
+        <input type="text" id="achievement-name" placeholder="Название" required />
+        <textarea id="achievement-description" placeholder="Описание" required></textarea>
+        <input type="number" id="achievement-exp" placeholder="Опыт" required />
+        <button id="saveAchievement" class="btn">Сохранить</button>
+        <button id="closeModal" class="btn">Закрыть</button>
+    </div>
+</div>
+<footer>
+    <h3>Выполнил: ИКБО-13-22 Козлов Кирилл</h3>
+</footer>
+<script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* Основные стили для страницы */
+body {
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    width: 90%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+}
+
+header button:hover {
+    background-color: #ddd;
+}
+
+/* Контейнер для содержимого */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Блок с ачивками и пользователями */
+.achievements, .users {
+    width: 45%;
+    padding: 20px;
+    background-color: #1e1e1e; /* Темный фон для блоков */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовки */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* Список ачивок и пользователей */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2d2d2d; /* Темно-серый фон для элементов списка */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444; /* Легкая граница */
+}
+
+/* Кнопки */
+button.btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Зеленый фон */
+    color: white; /* Белый текст */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #218838; /* Темно-зеленый при наведении */
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    background-color: #333; /* Темный фон для модального окна */
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    resize: none; /* Отключает изменение размера */
+}
+
+
+input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Скрытие кнопок увеличения/уменьшения в поле type="number" */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+input:invalid, textarea:invalid {
+    border: 2px solid red;
+}
+
+input:valid, textarea:valid {
+    border: 2px solid green;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Зеленая кнопка */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Красная кнопка */
+    color: white;
+}
+
+
+button.edit-btn:hover {
+    background-color: #45a049; /* Тень для зеленой кнопки */
+}
+
+
+button.delete-btn:hover {
+    background-color: #e53935; /* Тень для красной кнопки */
+}
+
+/* Стиль для кнопок */
+button.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+/* Зеленая кнопка для редактирования */
+button.edit-btn {
+    background-color: #4CAF50; /* Зеленый для редактирования */
+    color: white;
+}
+
+button.edit-btn:hover {
+    background-color: #45a049; /* Тень для зеленой кнопки */
+}
+
+/* Красная кнопка для удаления */
+button.delete-btn {
+    background-color: #f44336; /* Красный для удаления */
+    color: white;
+}
+
+button.delete-btn:hover {
+    background-color: #e53935; /* Тень для красной кнопки */
+}
+
+/* Стиль для списка ачивок */
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Контейнер для кнопок */
+li .buttons-container {
+    display: flex;
+    justify-content: flex-end; /* Выровнять кнопки по правому краю */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Фиксированная длина для названия ачивки */
+.achievement-name {
+    width: 200px; /* Установите нужную длину */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Обрезать длинные названия */
+    font-weight: bold;
+}
+
+/* Скрытое описание и опыт по умолчанию */
+.achievement-details {
+    display: none;
+    margin-top: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.achievement-item.active .achievement-details {
+    display: block; /* Показывать описание и опыт при активной ачивке */
+}
+
+
+.achievement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.achievement-content {
+    flex-grow: 1;
+    cursor: pointer;
+}

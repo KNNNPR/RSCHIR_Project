@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: SteamCopy
+    jpa:
+        generate-ddl: true
+        show-sql: true
+        hibernate:
+            ddl-auto:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        username: postgres
+        password: 220404kki
+        url: jdbc:postgresql://localhost:5432/postgres

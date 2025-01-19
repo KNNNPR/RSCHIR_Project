@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link href='/css/account.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <h1>Профиль игрока</h1>
+    <button onclick="logout()">Выйти</button>
+</header>
+<div class="profile">
+    <img id="random-photo" alt="Фото пользователя">
+    <p id="id"></p>
+    <input id="username">
+    <div id="photo-modal" class="modal">
+        <div class="modal-content">
+            <h3>Выберите фотографию</h3>
+            <div id="photo-selection"></div>
+            <h3>Выберите цвет обрамления</h3>
+            <div id="color-selection">
+                <button class="color-btn" data-color="red" style="background-color: red;"></button>
+                <button class="color-btn" data-color="blue" style="background-color: blue;"></button>
+                <button class="color-btn" data-color="green" style="background-color: green;"></button>
+                <button class="color-btn" data-color="yellow" style="background-color: yellow;"></button>
+            </div>
+            <button id="applyPhoto">Применить</button>
+            <button id="closePhotoModal">Закрыть</button>
+        </div>
+    </div>
+
+</div>
+<div class="progress-container">
+    <h2>Прогресс:</h2>
+    <div class="progress-bar">
+        <div id = "progress"></div>
+    </div>
+</div>
+<div class="achievements">
+    <h2>Ачивки:</h2>
+    <ul id="achievement-list">
+    </ul>
+</div>
+<footer>
+    <h3>Выполнил: ИКБО-13-22 Козлов Кирилл</h3>
+</footer>
+<script src='/js/account.js'></script>
+</body>
+</html>

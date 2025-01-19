@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link href='/css/account.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <h1 onclick="redirectToAdmin()">←</h1>
+    <h1 id = "hh">Профиль игрока</h1>
+    <button onclick="logout()">Выйти</button>
+</header>
+<div class="profile">
+    <img id="random-photo" alt="Фото пользователя">
+    <p id="id"></p>
+    <p id="username"></p>
+</div>
+<div class="progress-container">
+    <h2>Прогресс:</h2>
+    <div class="progress-bar">
+        <div id = "progress"></div>
+    </div>
+</div>
+<div class="achievements">
+    <h2>Ачивки:</h2>
+    <ul id="achievement-list">
+    </ul>
+</div>
+<footer>
+    <h3>Выполнил: ИКБО-13-22 Козлов Кирилл</h3>
+</footer>
+<script src='/js/user-page.js'></script>
+</body>
+</html>
